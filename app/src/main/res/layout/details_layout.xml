@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/section_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/subsection_textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="TextView"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/detailsadView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6508526601344465/5069663702" />
+
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/expandableListView"
+        android:divider="#433"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft"
+        android:dividerHeight="0.5dp">
+
+
+
+
+
+    </ExpandableListView>
+
+</LinearLayout>

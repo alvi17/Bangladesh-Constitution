@@ -1,0 +1,653 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context="alvi17.bangladeshconstitution.Bangla_Fragment">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+   >
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        >
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:text="১["
+           android:gravity="center_horizontal"
+           />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="বিস্‌মিল্লাহির-রহ্‌মানির রহিম"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />`
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="(দয়াময়, পরম দয়ালু, আল্লাহের নামে)/\nপরম করুণাময় সৃষ্টিকর্তার নামে।]"
+        android:gravity="center_horizontal"
+        />
+
+
+    <com.google.android.gms.ads.NativeExpressAdView
+        android:id="@+id/native_adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adUnitId="ca-app-pub-6508526601344465/8030691353"
+        ads:adSize="280x80"
+        android:layout_gravity="center_horizontal"
+        android:elevation="5dp"
+        android:visibility="gone"
+        >
+    </com.google.android.gms.ads.NativeExpressAdView>
+
+
+    <TextView
+        android:id="@+id/prefacetextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/normal_state_background"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:text="প্রস্তাবনা "
+        android:clickable="true"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/preface_bangla"
+        android:layout_marginTop="5dp"
+        android:id="@+id/preface_details_textView"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ধারাসমূহ"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        android:textSize="16dp"
+        android:textColor="#032111"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:id="@+id/first_section"
+        android:clickable="true"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="প্রথম ভাগ"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="প্রজাতন্ত্র"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/second_section"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="দ্বিতীয় ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="রাষ্ট্র পরিচালনার মূলনীতি"
+            android:gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/third_section"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="তৃতীয় ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="মৌলিক অধিকার"
+            android:gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/fourth_section"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="চতুর্থ ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="নির্বাহী বিভাগ"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        android:id="@+id/fourth_subsection_layout"
+
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" [৪] ১ম পরিচ্ছেদ\nরাষ্ট্রপতি"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/fourth_first_chapter"
+            android:background="#dedcdc"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="২য় পরিচ্ছেদ\nপ্রধানমন্ত্রী ও মন্ত্রিসভা"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/fourth_second_chapter"
+            android:layout_marginTop="2dp"
+            android:background="#dedcdc"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="২ক পরিচ্ছেদ\nনির্দলীয় তত্ত্বাবধায়ক সরকার [সংবিধান (পঞ্চদশ সংশোধন) আইন, ২০১১ (২০১১ সনের ১৪ নং আইন)-এর ২১ ধারাবলে পরিচ্ছেদটি বিলুপ্ত।]"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+
+            android:background="#dedcdc"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="৩য় পরিচ্ছেদ\nস্থানীয় শাসন"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/fourth_third_chapter"
+            android:background="#dedcdc"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="৪র্থ পরিচ্ছেদ\nপ্রতিরক্ষা কর্মবিভাগ"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/fourth_fourth_chapter"
+            android:background="#dedcdc"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="৫ম পরিচ্ছেদ\nঅ্যাটর্ণি -জেনারেল"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/fourth_fifth_chapter"
+            android:background="#dedcdc"
+            android:clickable="true"
+            android:layout_marginTop="2dp"
+            />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/fifth_section"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="পঞ্চম ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="আইনসভা"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/fifthsubsection_layout"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="১ম পরিচ্ছেদ\nসংসদ"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/fifth_first_chapter"
+            android:background="#dedcdc"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="২য় পরিচ্ছেদ\nআইন প্রনয়ন ও অর্থসংক্রান্ত পদ্ধতি"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/fifth_second_chapter"
+            android:background="#dedcdc"
+            android:layout_marginTop="2dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="৩য় পরিচ্ছেদ\nঅধ্যাদেশপ্রণয়ন-ক্ষমতা"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/fifth_third_chapter"
+            android:background="#dedcdc"
+            android:layout_marginTop="2dp"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/sixth_section"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ষষ্ঠ ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="বিচারবিভাগ"
+            android:gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:id="@+id/sixth_subsection"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" ১ম পরিচ্ছেদ\nসুপ্রীম কোর্ট"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/sixth_first_chapter"
+            android:background="#dedcdc"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="২য় পরিচ্ছেদ\nঅধস্তন আদালত"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/sixth_second_chapter"
+            android:background="#dedcdc"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="৩য় পরিচ্ছেদ\nপ্রশাসনিক ট্রাইব্যুনাল"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/sixth_three_chapter"
+            android:background="#dedcdc"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ষষ্ঠ ক ভাগ-জাতীয়দল"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="[সংবিধান (পঞ্চদশ সংশোধন) আইন, ২০১১ (২০১১ সনের ১৪ নং আইন)-এর ৪১ ধারাবলে বিলুপ্ত।]"
+            android:gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/seventh_section"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="সপ্তম ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="নির্বাচন"
+            android:gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/eight_section"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="অষ্টম ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="মহা হিসাব-নিরীক্ষক ও নিয়ন্ত্রক"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/nineth_section"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="নবম ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="বাংলাদেশের কর্মবিভাগ"
+            android:gravity="center_horizontal"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical"
+        android:id="@+id/ninth_subsection"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="১ম পরিচ্ছেদ\nকর্মবিভাগ"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/ninth_first_chapter"
+            android:background="#dedcdc"
+            android:clickable="true"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="২য় পরিচ্ছেদ\nসরকারী কর্ম কমিশন"
+            android:gravity="center_horizontal"
+            android:padding="10dp"
+            android:id="@+id/ninth_second_chapter"
+            android:background="#dedcdc"
+            android:layout_marginTop="2dp"
+            android:clickable="true"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/ninth_a_subsection"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" [৫] নবম-ক ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="জরুরী বিধানাবলী"
+            android:gravity="center_horizontal"
+            />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:id="@+id/tenth_section"
+        android:clickable="true"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="দশম ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="সংবিধান-সংশোধন"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/normal_state_background"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:clickable="true"
+        android:id="@+id/eleventh_section"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="একাদশ ভাগ"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="বিবিধ"
+            android:gravity="center_horizontal"
+            />
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
+
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-6508526601344465/5069663702" />
+
+</FrameLayout>
