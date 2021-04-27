@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -73,7 +73,7 @@ public class Bangla_Fragment extends Fragment implements View.OnClickListener{
     }
 
     TextView prefaceTextView,prefacedetailsTextView;
-    LinearLayout section1,section2,section3,section4,section5,section6,section7,section8,section9,section10,section11;
+    LinearLayout section1,section2,section3,section4,section5,section6,section7,section8,section9,section91,section10,section11;
 
     TextView section4_subsection1,section4_subsection2,section4_subsection3,section4_subsection4,section4_subsection5,
             section5_subsection1,section5_subsection2,section5_subsection3,
@@ -117,6 +117,8 @@ public class Bangla_Fragment extends Fragment implements View.OnClickListener{
         section10.setOnClickListener(this);
         section11=(LinearLayout)rootView.findViewById(R.id.eleventh_section);
         section11.setOnClickListener(this);
+        section91=(LinearLayout)rootView.findViewById(R.id.ninth_a_subsection);
+        section91.setOnClickListener(this);
 
         subsection4=(LinearLayout)rootView.findViewById(R.id.fourth_subsection_layout);
         subsection5=(LinearLayout)rootView.findViewById(R.id.fifthsubsection_layout);
@@ -157,35 +159,6 @@ public class Bangla_Fragment extends Fragment implements View.OnClickListener{
         ninth_subsection2.setOnClickListener(this);
 
 
-        native_adView = (NativeExpressAdView)rootView.findViewById(R.id.native_adView);
-        native_adView.setVideoOptions(new VideoOptions.Builder()
-                .setStartMuted(true)
-                .build());
-
-        mVideoController = native_adView.getVideoController();
-        mVideoController.setVideoLifecycleCallbacks(new VideoController.VideoLifecycleCallbacks() {
-            @Override
-            public void onVideoEnd() {
-                Log.e("QA", "Video playback is finished.");
-                super.onVideoEnd();
-            }
-        });
-
-
-        native_adView.setAdListener(new AdListener() {
-            @Override
-            public void onAdLoaded() {
-                native_adView.setVisibility(View.VISIBLE);
-                if (mVideoController.hasVideoContent()) {
-                    Log.e("QA", "Received an ad that contains a video asset.");
-                } else {
-                    Log.e("QA", "Received an ad that does not contain a video asset.");
-                }
-            }
-        });
-
-        AdRequest request = new AdRequest.Builder().addTestDevice("0754C239B1E2E19421FDE46BCEFB8855").build();
-        native_adView.loadAd(request);
 
         AdView adView = (AdView) rootView.findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder()
